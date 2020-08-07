@@ -6,9 +6,19 @@ var replacements = [
   [/\)/g, '\\)', 'parentheses'],
   [/\[/g, '\\[', 'square brackets'],
   [/\]/g, '\\]', 'square brackets'],
+  [/{/g, '\\{', 'curly brackets'],
+  [/}/g, '\\}', 'curly brackets'],
   [/</g, '&lt;', 'angle brackets'],
   [/>/g, '&gt;', 'angle brackets'],
-  [/_/g, '\\_', 'underscores']
+  [/_/g, '\\_', 'underscores'],
+  [/\+/g, '\\+', 'plus'],
+  [/=/g, '\\=', 'equals'],
+  [/-/g, '\\-', 'minus'],
+  [/~/g, '\\~', 'tilde'],
+  [/`/g, '\\`', 'backtick'],
+  [/\|/g, '\\|', 'vertical bar'],
+  [/\./g, '\\.', 'dot'],
+  [/!/g, '\\!', 'exclamation mark'],
 ]
 
 module.exports = function (string, skips) {
